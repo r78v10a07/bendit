@@ -1,0 +1,77 @@
+= Bend.it® Server =
+
+== Introduction ==
+
+This software predicts DNA curvature from DNA sequences. The curvature is 
+calculated as a vector sum of dinucleotide geometries (roll, tilt and twist angles) 
+using the BEND algorithm of Godsell and Dickerson, and expressed as degrees per 
+helical turn (10.5 °/helical turn = 1 °/basepair).
+
+This calculation - like all predictions - is approximate. Experimentally tested 
+curved motifs produce curvature values of 5 to 25 °/helical turn, while straight
+motifs give values below 5 °/helical turn.
+
+Basic concepts, references and tips for evaluation are provided, along with 
+short examples.
+
+The results are presented in several forms:
+
+a) 1-D sequence plot, in which the curvature and the flexibility or GC content are 
+plotted along the DNA sequence with options to smooth the plot
+
+b) 2-D plot, in which the curvature is plotted against flexibility or GC content
+
+c) ASCII (text only) tabulated output of calculated values, sent by e-mail.
+
+== Requirements ==
+
+1. GCC
+2. Makefile
+3. GNUPlot
+
+== Compilation ==
+
+cd bendit
+make all
+
+== References == 
+
+1. Ligeti B.; Vera R.; Juhász J.; Pongor S. (2016). CX, DPX and PCW (2016): Web
+   servers for the visualization of interior and protruding regions of protein
+   structures in 3D and 1D. Prediction of Protein Secondary Structure, 
+   Methods in Molecular Biology. 1484, Chapter 20, 301–310. 
+
+2. Vlahovicek, K., Kaján and Pongor, S. (2003): "DNA analysis servers: plot.it.,
+   bend.it, model.it and IS" Nucleic Acids Res., 31(13), 3686-7
+
+3. Gabrielian, A., Vlahovicek, K. and Pongor S. (1997): "Distribution of 
+   sequence-dependent curvature in genomic DNA" FEBS Letters, 406, 69-74
+
+4. Gabrielian, A., Simoncsits, A. and Pongor, S. (1996): "Distribution of 
+   Bending Propensity in DNA Sequences" FEBS Letters, 393, 124-130
+
+5. Gabrielian, A., Pongor, S. (1996) "Correlation of intrinsic DNA curvature 
+   with DNA property periodicity", FEBS Letters, 393, 65-68
+
+6. Brukner, I., Sanchez, R., Suck, D. and Pongor, S. (1995) "Sequence dependent
+   bending propensity of DNA as revealed by DNAse I: Parameters for 
+   trinucleotides" EMBO J. 14, 1812-1818.
+
+7. Goodsell, D.S. and Dickerson, R.E. (1994) "Bending and curvature calculations
+   in B-DNA" Nucl. Acids Res. 22, 5497-5503
+
+== Contact ==
+
+Sándor Pongor, PhD DSc
+Professor,
+Faculty of Bionics and Information Technology
+Pázmány Péter Catholic University
+Práter u. 50/a, 1083 Budapest, Hungary
+E-mail: pongor.sandor@itk.ppke.hu
+Telephone: +36-1-886-4703
+Fax: +36-1-886-4724
+
+Roberto Vera Alvarez, PhD
+Computational Structural Biologist
+MSC & National Center for Biotechnology Information
+E-mail: r78v10a07@gmail.com
