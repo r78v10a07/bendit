@@ -34,6 +34,12 @@ c) ASCII (text only) tabulated output of calculated values, sent by e-mail.
 cd bendit
 make all
 
+== Web server ==
+
+You can run the program using our web server:
+
+    http://pongor.itk.ppke.hu/dna/bend_it.html
+
 == References == 
 
 1. Ligeti B.; Vera R.; Juhász J.; Pongor S. (2016). CX, DPX and PCW (2016): Web
